@@ -1,4 +1,7 @@
 # Design-of- 8 bit Segmented-Digital to Analog Converter
+
+A segmented DAC employs multiple individual DAC sub-circuits, also known as segments, to collectively generate a more accurate and finely-tuned analog output. Each segment of the DAC corresponds to a specific range or portion of the digital input code, and these segments are often combined to achieve higher precision and improved linearity in the analog output. Because which the overall performance including DNL will be improved.
+
 ![image](https://github.com/TarakaSriram/Design-of-Segmented-Digital-to-Analog-Converter/assets/65438040/71f31470-5468-404d-8477-fcd1dedbb1aa)
 
 The 4 bit binary weighted DAC
