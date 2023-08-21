@@ -1,4 +1,4 @@
-# Design-of-Segmented-Digital to Analog Converter
+# Design-of- 8 bit Segmented-Digital to Analog Converter
 ![image](https://github.com/TarakaSriram/Design-of-Segmented-Digital-to-Analog-Converter/assets/65438040/71f31470-5468-404d-8477-fcd1dedbb1aa)
 
 The 4 bit binary weighted DAC
@@ -17,3 +17,7 @@ So here DNL is used as metric/parameter inorder to find the performance of the D
 A DNL value of 0 indicates perfect linearity, meaning each step in the digital input corresponds exactly to an expected step in the analog output. Positive DNL values suggest that the output step is larger than desired, while negative DNL values imply that the output step is smaller than expected.
 
 In practical terms, DNL impacts the precision and integrity of the analog signal produced by the DAC. High DNL values can result in nonuniform spacing between output levels, causing distortion and inaccuracies in the converted analog signal. Therefore, minimizing DNL is crucial for achieving high-quality, accurate analog outputs in digital-to-analog converters. DNL is meaasured in terms of LSB.
+
+When DAC is completly implemented with the R-2R , then DNL will not be that great as expected from the ideal behaviour, so in order to get the better performance a new type of archeitecture is being imlemented that is called segmented DAC, here i have implemented 8 bit Segmented DAC. In which first 5 bits are implemeted in R-2R structure and the last 3 bits are implemented in binary weighted form.
+
+A segmented DAC  employs multiple individual DAC sub-circuits, also known as segments, to collectively generate a more accurate and finely-tuned analog output. Each segment of the DAC corresponds to a specific range or portion of the digital input code, and these segments are often combined to achieve higher precision and improved linearity in the analog output. Because which the overall performance including DNL will be improved.
